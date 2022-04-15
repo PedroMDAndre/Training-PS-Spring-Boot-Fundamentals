@@ -25,10 +25,10 @@ public class Application {
 
     private String owner;
 
-    public Application(String name, String description, String owner) {
+    public Application(String name, String owner, String description) {
         this.name = name;
-        this.description = description;
         this.owner = owner;
+        this.description = description;
     }
 
 }
