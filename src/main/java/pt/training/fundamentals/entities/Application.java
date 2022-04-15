@@ -1,4 +1,4 @@
-package pt.training.fundamentals.entity;
+package pt.training.fundamentals.entities;
 
 import lombok.*;
 

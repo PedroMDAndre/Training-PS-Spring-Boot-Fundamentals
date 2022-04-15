@@ -11,3 +11,7 @@ spring:
     console:
       path: /h2
       enabled: true
+  thymeleaf:
+    template-loader-path: classpath:/templates
+    suffix: .html
+    cache: false
