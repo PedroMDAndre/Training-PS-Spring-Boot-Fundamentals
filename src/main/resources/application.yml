@@ -4,6 +4,9 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password:
+  jpa:
+    # Run database initialization from data.sql after Hibernate is initialized
+    defer-datasource-initialization: true
   h2:
     console:
       path: /h2
