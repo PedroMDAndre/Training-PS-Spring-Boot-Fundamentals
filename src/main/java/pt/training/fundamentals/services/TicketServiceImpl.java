@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import pt.training.fundamentals.entities.Ticket;
 import pt.training.fundamentals.repositories.TicketRepository;
 
+import java.util.List;
+
 @Service
 public class TicketServiceImpl implements TicketService {
 
@@ -12,8 +14,8 @@ public class TicketServiceImpl implements TicketService {
     private TicketRepository ticketRepository;
 
     @Override
-    public Iterable<Ticket> listTickets() {
-        return ticketRepository.findAll();
+    public List<Ticket> listTickets() {
+        return (List<Ticket>) ticketRepository.findAll();
     }
 
 }
