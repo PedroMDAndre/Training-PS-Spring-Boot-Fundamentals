@@ -40,7 +40,7 @@ public class Mutation implements GraphQLMutationResolver {
             applicationRepository.save(application);
             return application;
         } else {
-            throw new ApplicationNotFoundException("Application Not Found");
+            throw new ApplicationNotFoundException("Application Not Found", id);
         }
     }
 }
